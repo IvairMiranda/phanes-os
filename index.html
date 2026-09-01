@@ -32,20 +32,7 @@ Continuar?`))return;x.forEach((I)=>{try{let re=S[I],gl=typeof re==="string"?re:J
 </script>
   <script>(function(){function m(a){var h=a.getAttribute("href");if(!h)return;try{var u=new URL(h,document.baseURI);if((u.protocol==="http:"||u.protocol==="https:")&&u.host!==location.host){a.target="_blank";a.rel="noopener noreferrer";}}catch(e){}}function s(){document.querySelectorAll("a[href]").forEach(m);}if(document.readyState!=="loading"){s();}else{document.addEventListener("DOMContentLoaded",s);}document.addEventListener("click",function(e){var a=e.target&&e.target.closest&&e.target.closest("a[href]");if(a){m(a);}},true);})();</script>
 <style>
-div.text-\[11\.5px\]{display:none !important}
-</style>
-<script>
-setTimeout(()=>{
- document.querySelectorAll('div').forEach(d=>{
-   if(d.innerText.includes('Firebase Sync') || d.innerText.includes('phanes-os') && d.innerText.includes('Exportar')){
-     d.style.display='none';
-   }
-   if(d.innerHTML.includes('⚠️') || d.innerHTML.includes('!') && d.className.includes('zinc')){
-     // esconde o ícone amarelo também
-     if(d.innerText.length < 200) d.style.display='none';
-   }
- });
-},800);
-</script>  
+div[class*="text-[11.5px]"]{display:none !important}
+</style>  
 </body>
 </html>
