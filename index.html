@@ -32,18 +32,5 @@ Continuar?`))return;x.forEach((I)=>{try{let re=S[I],gl=typeof re==="string"?re:J
 </script>
   <script>(function(){function m(a){var h=a.getAttribute("href");if(!h)return;try{var u=new URL(h,document.baseURI);if((u.protocol==="http:"||u.protocol==="https:")&&u.host!==location.host){a.target="_blank";a.rel="noopener noreferrer";}}catch(e){}}function s(){document.querySelectorAll("a[href]").forEach(m);}if(document.readyState!=="loading"){s();}else{document.addEventListener("DOMContentLoaded",s);}document.addEventListener("click",function(e){var a=e.target&&e.target.closest&&e.target.closest("a[href]");if(a){m(a);}},true);})();</script>
 <script>
-(function(){
-  function limpa(){
-    document.querySelectorAll('div, span').forEach(function(el){
-      if(el.textContent && el.textContent.indexOf('Firebase Sync ATIVO') > -1 && el.children.length < 3){
-        el.style.display='none';
-      }
-    });
-  }
-  setTimeout(limpa, 500);
-  setInterval(limpa, 1000);
-})();
-</script>
- 
 </body>
 </html>
